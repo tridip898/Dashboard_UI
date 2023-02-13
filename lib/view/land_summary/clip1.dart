@@ -32,11 +32,13 @@ class Triangle1 extends CustomClipper<Path>{
   @override
   Path getClip(Size size) {
     final path=Path();
-    path.lineTo(0, 0);
-    path.lineTo(size.width*0.30,size.height);
+    path.moveTo(size.width*0.20, size.height*0.06);
+    path.quadraticBezierTo(size.width*0.05, size.height*0.10, size.width*0.06, size.height*0.32);
+    path.lineTo(size.width*0.28,size.height);
     path.lineTo(size.width*0.75,size.height);
-    path.lineTo(size.width,0);
-    //path.close();
+    path.lineTo(size.width-size.width*0.06,size.height*0.32);
+    path.quadraticBezierTo(size.width-size.width*0.05, size.height*0.10, size.width*0.80, size.height*0.05);
+    path.quadraticBezierTo(size.width/2, 0, size.width*0.20, size.height*0.06);
     return path;
   }
   @override

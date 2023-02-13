@@ -11,9 +11,9 @@ class ClipBottomCont1 extends StatelessWidget {
     return ClipPath(
       clipper: ClipCont1(),
       child: Container(
-        height: 4.2.h,
+        height: 5.4.h,
         width: 12.w,
-        alignment: Alignment.topCenter,
+        alignment: Alignment.center,
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
             color: color,
@@ -29,10 +29,14 @@ class ClipCont1 extends CustomClipper<Path>{
   @override
   Path getClip(Size size) {
     final path=Path();
-    path.lineTo(size.width*0.20, 0);
-    path.lineTo(0,size.height);
-    path.lineTo(size.width*0.80,size.height);
-    path.lineTo(size.width,0);
+    path.moveTo(size.width*0.40, 10);
+    path.quadraticBezierTo(size.width*0.27, 9, size.width*0.25, size.height/3);
+    path.lineTo(size.width*0.12, size.height*0.80);
+    path.quadraticBezierTo(size.width*0.10, size.height-5, size.width/3, size.height-5);
+    path.lineTo(size.width*0.75, size.height-5);
+    path.quadraticBezierTo(size.width*.87, size.height-6, size.width*.98, size.height/4);
+    path.lineTo(size.width*0.98, size.height*0.20);
+    path.quadraticBezierTo(size.width, 10, size.width*.35, 10);
     path.close();
     return path;
   }

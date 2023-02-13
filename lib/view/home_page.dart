@@ -239,7 +239,7 @@ class _HomePageState extends State<HomePage> {
                             )
                           ],
                         ),
-                      ),
+                       ),
                       //nurture
                       Positioned(
                         left: 3.8.w,
@@ -414,99 +414,101 @@ class _HomePageState extends State<HomePage> {
                       Positioned(
                         top: 21.h,
                         right: 5.w,
-                        child: Row(
-                          children: [
-                            RotatedBox(
-                              quarterTurns: 1,
-                              child: Container(
-                                height: 4.4.h,
-                                width: 18.w,
-                                margin: EdgeInsets.symmetric(vertical: 1.5.w),
-                                decoration: BoxDecoration(
-                                  color: Color(0xff2CA555),
-                                  borderRadius: BorderRadius.circular(30)
-                                ),
-                                child: Center(
-                                  child: Text("Won",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
-                                ),
-                              ),
-                            ),
-                            RotatedBox(
-                              quarterTurns: 1,
-                              child: Container(
-                                height: 4.4.h,
-                                width: 30.w,
-                                margin: EdgeInsets.symmetric(vertical: 1.5.w),
-                                decoration: BoxDecoration(
-                                    color: Color(0xff34C759),
+                        child: Center(
+                          child: Row(
+                            children: [
+                              RotatedBox(
+                                quarterTurns: 1,
+                                child: Container(
+                                  height: 4.4.h,
+                                  width: 18.w,
+                                  margin: EdgeInsets.symmetric(vertical: 1.2.w),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff2CA555),
                                     borderRadius: BorderRadius.circular(30)
-                                ),
-                                child: Center(
-                                    child: Text("Onboard",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
-                                ),
-                              ),
-                            ),
-                            RotatedBox(
-                              quarterTurns: 1,
-                              child: Container(
-                                height: 4.4.h,
-                                width: 35.w,
-                                margin: EdgeInsets.symmetric(vertical: 1.5.w),
-                                decoration: BoxDecoration(
-                                    color: Color(0xffA0C757),
-                                    borderRadius: BorderRadius.circular(30)
-                                ),
-                                child: Center(
-                                    child: Text("Feedback Loop",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
+                                  child: Center(
+                                    child: Text("Won",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
                                 ),
                               ),
-                            ),
-                            RotatedBox(
-                              quarterTurns: 1,
-                              child: Container(
-                                height: 4.4.h,
-                                width: 40.w,
-                                margin: EdgeInsets.symmetric(vertical: 1.5.w),
-                                decoration: BoxDecoration(
-                                    color: Color(0xffCCC756),
-                                    borderRadius: BorderRadius.circular(30)
-                                ),
-                                child: Center(
-                                    child: Text("Customer Success",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
-                                ),
-                              ),
-                            ),
-                            RotatedBox(
-                              quarterTurns: 1,
-                              child: Container(
-                                height: 4.4.h,
-                                width: 45.w,
-                                margin: EdgeInsets.symmetric(vertical: 1.5.w),
-                                decoration: BoxDecoration(
-                                    color: Color(0xffE2C756),
-                                    borderRadius: BorderRadius.circular(30)
-                                ),
-                                child: Center(
-                                    child: Text("Build Relationship",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                              RotatedBox(
+                                quarterTurns: 1,
+                                child: Container(
+                                  height: 4.4.h,
+                                  width: 30.w,
+                                  margin: EdgeInsets.symmetric(vertical: 1.2.w),
+                                  decoration: BoxDecoration(
+                                      color: Color(0xff34C759),
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  child: Center(
+                                      child: Text("Onboard",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
                                 ),
                               ),
-                            ),
-                            RotatedBox(
-                              quarterTurns: 1,
-                              child: Container(
-                                height: 4.4.h,
-                                width: 50.w,
-                                margin: EdgeInsets.symmetric(vertical: 1.5.w),
-                                decoration: BoxDecoration(
-                                    color: Color(0xffF8C756),
-                                    borderRadius: BorderRadius.circular(30)
-                                ),
-                                child: Center(
-                                    child: Text("Expand",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                              RotatedBox(
+                                quarterTurns: 1,
+                                child: Container(
+                                  height: 4.4.h,
+                                  width: 35.w,
+                                  margin: EdgeInsets.symmetric(vertical: 1.2.w),
+                                  decoration: BoxDecoration(
+                                      color: Color(0xffA0C757),
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  child: Center(
+                                      child: Text("Feedback Loop",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              RotatedBox(
+                                quarterTurns: 1,
+                                child: Container(
+                                  height: 4.4.h,
+                                  width: 40.w,
+                                  margin: EdgeInsets.symmetric(vertical: 1.2.w),
+                                  decoration: BoxDecoration(
+                                      color: Color(0xffCCC756),
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  child: Center(
+                                      child: Text("Customer Success",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
+                                ),
+                              ),
+                              RotatedBox(
+                                quarterTurns: 1,
+                                child: Container(
+                                  height: 4.4.h,
+                                  width: 45.w,
+                                  margin: EdgeInsets.symmetric(vertical: 1.2.w),
+                                  decoration: BoxDecoration(
+                                      color: Color(0xffE2C756),
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  child: Center(
+                                      child: Text("Build Relationship",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
+                                ),
+                              ),
+                              RotatedBox(
+                                quarterTurns: 1,
+                                child: Container(
+                                  height: 4.4.h,
+                                  width: 50.w,
+                                  margin: EdgeInsets.symmetric(vertical: 1.2.w),
+                                  decoration: BoxDecoration(
+                                      color: Color(0xffF8C756),
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  child: Center(
+                                      child: Text("Expand",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,fontFamily: "Montserrat",color: Colors.white),)
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       //bottom 3 value
