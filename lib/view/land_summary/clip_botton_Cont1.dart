@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 class ClipBottomCont1 extends StatelessWidget {
   final int num;
@@ -8,18 +7,19 @@ class ClipBottomCont1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size=MediaQuery.of(context).size;
     return ClipPath(
       clipper: ClipCont1(),
       child: Container(
-        height: 5.4.h,
-        width: 12.w,
+        height: size.height*0.055,
+        width: size.width*0.15,
         alignment: Alignment.center,
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
             color: color,
-          borderRadius: BorderRadius.circular(15)
+            borderRadius: BorderRadius.circular(15)
         ),
-        child: Text(num.toString(),style: TextStyle(fontFamily: "Montserrat",fontWeight: FontWeight.w600,color: Colors.white,fontSize: 12.5.sp),),
+        child: Text(num.toString(),style: TextStyle(fontFamily: "Montserrat",fontWeight: FontWeight.w600,color: Colors.white,fontSize: 14),),
       ),
     );
   }
